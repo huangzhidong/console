@@ -24,3 +24,9 @@ yarn-error.log*
 *.rdb
 /build
 .cache-loader
+
+# Log file
+*.log
+log/
+
+

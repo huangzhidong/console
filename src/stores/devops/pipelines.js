@@ -331,6 +331,7 @@ export default class PipelineStore extends BaseStore {
         branch,
       }
     )
+
     if (isArray(result)) {
       result = result.filter(activity => activity._links)
     }
@@ -355,7 +356,6 @@ export default class PipelineStore extends BaseStore {
           cluster,
         })}${devops}/pipelines/${name}/branches/${encodeURIComponent(branch)}/`
       )
-
       if (result.name) {
         this.branchDetail = result
       }
